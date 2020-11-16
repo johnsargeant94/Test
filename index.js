@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-const url = process.env.MongoDB_URL
-mongoose.connect(url, {
+
+mongoose.connect(process.env.MongoDB_URL, {
     useNewUrlParser: true,
     useFindAndModify:false,
     useUnifiedTopology: true
